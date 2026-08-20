@@ -23,7 +23,7 @@ export const corsOptionsDelegate: Parameters<INestApplication['enableCors']>[0] 
   };
 
   if (enableWildcard(req)) {
-    corsOptions.origin = true;
+     corsOptions.origin = '*';
   } else {
     corsOptions.origin = [];
 

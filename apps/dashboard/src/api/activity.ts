@@ -142,7 +142,7 @@ function mapWorkflowRunToActivity(workflowRun: GetWorkflowRunResponse | GetWorkf
           variables: [],
           name: step.stepType,
           subject: step.preview?.subject ?? '',
-          title: step.preview?.title ?? step.stepType,
+          title: step.preview?.title ?? '',
           preheader: step.preview?.preheader ?? '',
           senderName: step.preview?.senderName ?? '',
           _feedId: '',
